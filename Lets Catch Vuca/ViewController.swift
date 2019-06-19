@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        Thread.sleep(forTimeInterval: 1.0)
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
