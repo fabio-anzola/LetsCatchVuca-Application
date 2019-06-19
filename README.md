@@ -1,5 +1,5 @@
-# Application for Let's Catch Vuca
+# Application for Let's Catch Vuca  
 
-This Application will:
-    - Provide Information about the Project
-    - Showcase the Project
+This Application will:  
+    - Provide Information about the Project  
+    - Showcase the Project  
