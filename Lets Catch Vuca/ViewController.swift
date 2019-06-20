@@ -15,7 +15,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func homeButton(_ sender: Any) {
+        print("home pressed")
+    }
+    @IBAction func blogsButton(_ sender: Any) {
+        print("blogs pressed")
+    }
+    @IBAction func loginButton(_ sender: Any) {
+        print("login pressed")
+    }
+    @IBAction func infoButton(_ sender: Any) {
+        print("info pressed")
+    }
+    
 
 }
 
