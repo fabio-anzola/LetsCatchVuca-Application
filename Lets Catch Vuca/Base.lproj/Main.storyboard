@@ -72,18 +72,30 @@
                                 </subviews>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I64-nc-1Lk" userLabel="Current Tab">
+                                <rect key="frame" x="0.0" y="153" width="375" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dVK-8L-BaN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4s7-UB-zjl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dVK-8L-BaN" secondAttribute="trailing" id="AT3-96-rRX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I64-nc-1Lk" secondAttribute="trailing" id="EbZ-Tv-0xD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OJz-S1-zct" secondAttribute="bottom" id="LPT-9h-bRf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OJz-S1-zct" secondAttribute="trailing" id="QgT-Xr-w04"/>
+                            <constraint firstItem="I64-nc-1Lk" firstAttribute="top" secondItem="dVK-8L-BaN" secondAttribute="bottom" constant="5" id="UIy-HU-rgI"/>
                             <constraint firstItem="OJz-S1-zct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kgh-M0-E8q"/>
                             <constraint firstItem="dVK-8L-BaN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rwH-cN-cQa"/>
+                            <constraint firstItem="I64-nc-1Lk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zDc-zs-3Q6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currentTab" destination="I64-nc-1Lk" id="qAv-4v-v7i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
