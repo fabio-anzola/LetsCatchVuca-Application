@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var currentTab: UILabel!
+    @IBOutlet weak var webScreen: WKWebView!
     
     override func viewDidLoad() {
         Thread.sleep(forTimeInterval: 1.0)
         super.viewDidLoad()
+        let request = URLRequest(url: URL(string: "https://catchvuca.com")!)
+        webScreen?.load(request)
         // Do any additional setup after loading the view.
     }
     @IBAction func homeButton(_ sender: Any) {
