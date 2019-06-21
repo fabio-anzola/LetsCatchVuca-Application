@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     let requestHome = URLRequest(url: URL(string: "https://www.catchvuca.com/")!)
     let requestBlog = URLRequest(url: URL(string: "https://www.catchvuca.com/aktuelle-blogs/")!)
     let requestLogin = URLRequest(url: URL(string: "https://www.catchvuca.com/dashboard/")!)
+    let requestInfo = URLRequest(url: URL(string: "https://www.catchvuca.com/impressum/")!)
     
     override func viewDidLoad() {
         Thread.sleep(forTimeInterval: 1.0)
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
     }
     @IBAction func infoButton(_ sender: Any) {
 //        print("info pressed")
+        webScreen?.load(requestInfo)
         currentTab.text = "Info"
     }
     
