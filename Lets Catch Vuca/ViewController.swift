@@ -40,11 +40,6 @@ class ViewController: UIViewController {
         webScreen?.load(requestLogin)
         currentTab.text = "Login"
     }
-    @IBAction func infoButton(_ sender: Any) {
-//        print("info pressed")
-        webScreen?.load(requestInfo)
-        currentTab.text = "Info"
-    }
     
 
 }

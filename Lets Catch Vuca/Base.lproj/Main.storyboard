@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -61,7 +59,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="infoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uYF-HK-6kd"/>
+                                            <segue destination="efj-Th-C70" kind="show" id="tX0-WQ-bes"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -107,6 +105,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2PM-LB-KFz">
+            <objects>
+                <viewController modalPresentationStyle="pageSheet" id="efj-Th-C70" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n1n-J4-uVk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fabio Anzola © 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqX-cE-avB">
+                                <rect key="frame" x="0.0" y="701.66666666666663" width="375" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impressum: HTL Rennweg (Let's Catch Vuca) Rennweg 98b,  Wien 1030" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PE-B0-RXd">
+                                <rect key="frame" x="10" y="60.333333333333343" width="285.66666666666669" height="93"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXm-ob-y14">
+                                <rect key="frame" x="0.0" y="9.9999999999999982" width="375" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egR-PJ-pML">
+                                <rect key="frame" x="10" y="173.33333333333334" width="365" height="100.33333333333334"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvF-Uu-c4G">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRu-Ie-cep">
+                                        <rect key="frame" x="0.0" y="30.333333333333314" width="365" height="30"/>
+                                        <state key="normal" title="Mail"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO1-5x-dqD">
+                                        <rect key="frame" x="0.0" y="70.333333333333314" width="365" height="30"/>
+                                        <state key="normal" title="Telefon"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="egR-PJ-pML" firstAttribute="top" secondItem="3PE-B0-RXd" secondAttribute="bottom" constant="20" id="64G-Nb-ixR"/>
+                            <constraint firstItem="F72-k3-AaN" firstAttribute="bottom" secondItem="gqX-cE-avB" secondAttribute="bottom" constant="2" id="7eu-8A-08t"/>
+                            <constraint firstItem="RXm-ob-y14" firstAttribute="top" secondItem="F72-k3-AaN" secondAttribute="top" constant="10" id="Cnw-V0-wfy"/>
+                            <constraint firstItem="F72-k3-AaN" firstAttribute="trailing" secondItem="egR-PJ-pML" secondAttribute="trailing" id="DNo-aE-iTm"/>
+                            <constraint firstItem="F72-k3-AaN" firstAttribute="trailing" secondItem="RXm-ob-y14" secondAttribute="trailing" id="DaD-bo-qz5"/>
+                            <constraint firstItem="gqX-cE-avB" firstAttribute="leading" secondItem="F72-k3-AaN" secondAttribute="leading" id="Dfe-lF-QYX"/>
+                            <constraint firstItem="3PE-B0-RXd" firstAttribute="leading" secondItem="F72-k3-AaN" secondAttribute="leading" constant="10" id="K6d-uA-DA5"/>
+                            <constraint firstItem="RXm-ob-y14" firstAttribute="leading" secondItem="F72-k3-AaN" secondAttribute="leading" id="c9O-ky-RIG"/>
+                            <constraint firstItem="3PE-B0-RXd" firstAttribute="top" secondItem="RXm-ob-y14" secondAttribute="bottom" constant="30" id="fC8-Lb-NQk"/>
+                            <constraint firstItem="egR-PJ-pML" firstAttribute="leading" secondItem="F72-k3-AaN" secondAttribute="leading" constant="10" id="tXW-wh-e34"/>
+                            <constraint firstItem="gqX-cE-avB" firstAttribute="trailing" secondItem="F72-k3-AaN" secondAttribute="trailing" id="z9p-84-YcD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F72-k3-AaN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5La-AC-Zjg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5X-1g-6Tj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="137"/>
         </scene>
     </scenes>
     <resources>
