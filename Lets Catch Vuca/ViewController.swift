@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var webScreen: WKWebView!
     
     let requestHome = URLRequest(url: URL(string: "https://www.catchvuca.com/")!)
-    let requestBlog = URLRequest(url: URL(string: "https://www.catchvuca.com/aktuelle-blogs/")!)
-    let requestLogin = URLRequest(url: URL(string: "https://www.catchvuca.com/dashboard/")!)
-    let requestInfo = URLRequest(url: URL(string: "https://www.catchvuca.com/impressum/")!)
+    let requestBlog = URLRequest(url: URL(string: "https://www.instagram.com/catchvuca/")!)
+    let requestLogin = URLRequest(url: URL(string: "https://www.catchvuca.com/ghost/#/signin")!)
+    let instagramApp = UIApplication.shared
     
     override func viewDidLoad() {
         Thread.sleep(forTimeInterval: 1.0)
@@ -31,9 +31,12 @@ class ViewController: UIViewController {
         currentTab.text = "Home"
     }
     @IBAction func blogsButton(_ sender: Any) {
-//        print("blogs pressed")
-        webScreen?.load(requestBlog)
-        currentTab.text = "Blogs"
+        if (UIApplication.shared.canOpenURL(URL(string: "instagram://user?username=catchvuca")!)) {
+            instagramApp.open(URL(string: "instagram://user?username=catchvuca")!)
+        } else {
+            let webURL = URL(string: "https://instagram.com/catchvuca")!
+            instagramApp.open(webURL)
+        }
     }
     @IBAction func loginButton(_ sender: Any) {
 //        print("login pressed")
