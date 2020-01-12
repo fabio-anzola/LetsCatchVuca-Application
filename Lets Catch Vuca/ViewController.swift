@@ -15,20 +15,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var webScreen: WKWebView!
     
     let requestHome = URLRequest(url: URL(string: "https://www.catchvuca.com/")!)
-    let requestBlog = URLRequest(url: URL(string: "https://www.instagram.com/catchvuca/")!)
     let requestLogin = URLRequest(url: URL(string: "https://www.catchvuca.com/ghost/#/signin")!)
     let instagramApp = UIApplication.shared
     
     override func viewDidLoad() {
         Thread.sleep(forTimeInterval: 1.0)
         super.viewDidLoad()
-        webScreen?.load(requestHome)
+        webScreen.load(requestHome)
+        removeHeader();
         // Do any additional setup after loading the view.
     }
     @IBAction func homeButton(_ sender: Any) {
-//        print("home pressed")
-        webScreen?.load(requestHome)
         currentTab.text = "Home"
+//        print("home pressed")
+//        webScreen?.load(requestHome)
+        if (webScreen.url == URL(string: "https://www.catchvuca.com/")) {
+            removeHeader();
+        } else {
+            webScreen.load(requestHome)
+        }
     }
     @IBAction func blogsButton(_ sender: Any) {
         if (UIApplication.shared.canOpenURL(URL(string: "instagram://user?username=catchvuca")!)) {
@@ -44,6 +49,9 @@ class ViewController: UIViewController {
         currentTab.text = "Login"
     }
     
-
+    func removeHeader() {
+        let js = "document.getElementsByTagName(\"header\")[0].style.display='none';"
+        webScreen.evaluateJavaScript(js)
+    }
 }
 
