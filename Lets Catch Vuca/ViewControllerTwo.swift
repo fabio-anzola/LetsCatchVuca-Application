@@ -24,12 +24,21 @@ class ViewControllerTwo: UIViewController, MFMailComposeViewControllerDelegate, 
             composePicker.setMessageBody(message, isHTML: false)
              self.present(composePicker, animated: true, completion: nil)
 
-          } else {
-
-              print("Something went wrong :(")
-
-          }
-        
+        }
+        else {
+            showerrorMessage();
+            print("Something went wrong :(")
+            
+        }
     }
+    
+    func showerrorMessage() {
+        let alertMessage = UIAlertController(title: "Error during this action", message: "Please check if your device has this functionality!", preferredStyle: UIAlertController.Style.alert)
+        
+        let action = UIAlertAction(title:"Okay", style: UIAlertAction.Style.default, handler: nil)
+        alertMessage.addAction(action)
+        
+        self.present(alertMessage, animated: true, completion: nil)
+       }
     
 }
