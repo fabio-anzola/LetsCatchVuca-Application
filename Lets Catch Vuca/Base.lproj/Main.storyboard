@@ -152,6 +152,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO1-5x-dqD">
                                         <rect key="frame" x="0.0" y="70.333333333333314" width="365" height="30"/>
                                         <state key="normal" title="Telefon"/>
+                                        <connections>
+                                            <action selector="telButton:" destination="efj-Th-C70" eventType="touchUpInside" id="Ll2-EI-O5a"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

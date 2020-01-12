@@ -32,6 +32,19 @@ class ViewControllerTwo: UIViewController, MFMailComposeViewControllerDelegate, 
         }
     }
     
+    @IBAction func telButton(_ sender: Any) {
+//        Woring phone-call code
+//        guard let number = URL(string: "tel://" + "000000000000") else { return }
+//        UIApplication.shared.open(number)
+        
+        let infoMessage = UIAlertController(title: "Coming soon!", message: "Sorry! We currently do not have a phone number. Please contact us via email.", preferredStyle: UIAlertController.Style.alert)
+        
+        let action = UIAlertAction(title:"Okay", style: UIAlertAction.Style.default, handler: nil)
+        infoMessage.addAction(action)
+        
+        self.present(infoMessage, animated: true, completion: nil)
+    }
+    
     func showerrorMessage() {
         let alertMessage = UIAlertController(title: "Error during this action", message: "Please check if your device has this functionality!", preferredStyle: UIAlertController.Style.alert)
         
@@ -39,6 +52,6 @@ class ViewControllerTwo: UIViewController, MFMailComposeViewControllerDelegate, 
         alertMessage.addAction(action)
         
         self.present(alertMessage, animated: true, completion: nil)
-       }
+    }
     
 }
