@@ -13,6 +13,8 @@
 		0135EC6A22BA28F700C47F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0135EC6922BA28F700C47F5A /* Assets.xcassets */; };
 		0135EC6D22BA28F700C47F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0135EC6B22BA28F700C47F5A /* LaunchScreen.storyboard */; };
 		0135EC7522BA297B00C47F5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0135EC7422BA297A00C47F5A /* README.md */; };
+		015C2BB723CB8E2300BE8338 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015C2BB623CB8E2300BE8338 /* ViewControllerTwo.swift */; };
+		015C2BB923CB91A900BE8338 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015C2BB823CB91A900BE8338 /* MessageUI.framework */; };
 		01EA558922BD4D7D0002F55A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EA558822BD4D7D0002F55A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		0135EC6C22BA28F700C47F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0135EC6E22BA28F700C47F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0135EC7422BA297A00C47F5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		015C2BB623CB8E2300BE8338 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		015C2BB823CB91A900BE8338 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		01EA558822BD4D7D0002F55A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015C2BB923CB91A900BE8338 /* MessageUI.framework in Frameworks */,
 				01EA558922BD4D7D0002F55A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +72,7 @@
 				0135EC6922BA28F700C47F5A /* Assets.xcassets */,
 				0135EC6B22BA28F700C47F5A /* LaunchScreen.storyboard */,
 				0135EC6E22BA28F700C47F5A /* Info.plist */,
+				015C2BB623CB8E2300BE8338 /* ViewControllerTwo.swift */,
 			);
 			path = "Lets Catch Vuca";
 			sourceTree = "<group>";
@@ -74,6 +80,7 @@
 		01EA558722BD4D7C0002F55A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				015C2BB823CB91A900BE8338 /* MessageUI.framework */,
 				01EA558822BD4D7D0002F55A /* WebKit.framework */,
 			);
 			name = Frameworks;
@@ -153,6 +160,7 @@
 			files = (
 				0135EC6522BA28F700C47F5A /* ViewController.swift in Sources */,
 				0135EC6322BA28F700C47F5A /* AppDelegate.swift in Sources */,
+				015C2BB723CB8E2300BE8338 /* ViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="138" y="137"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Two-->
         <scene sceneID="2PM-LB-KFz">
             <objects>
-                <viewController modalPresentationStyle="pageSheet" id="efj-Th-C70" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="pageSheet" id="efj-Th-C70" customClass="ViewControllerTwo" customModule="Lets_Catch_Vuca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n1n-J4-uVk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,6 +145,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRu-Ie-cep">
                                         <rect key="frame" x="0.0" y="30.333333333333314" width="365" height="30"/>
                                         <state key="normal" title="Mail"/>
+                                        <connections>
+                                            <action selector="mailButton:" destination="efj-Th-C70" eventType="touchUpInside" id="faD-Oy-FRb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO1-5x-dqD">
                                         <rect key="frame" x="0.0" y="70.333333333333314" width="365" height="30"/>
