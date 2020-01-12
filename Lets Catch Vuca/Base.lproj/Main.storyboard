@@ -42,7 +42,7 @@
                                             <action selector="blogsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wN-1S-pGA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sW3-vq-2Ah">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sW3-vq-2Ah" userLabel="Login">
                                         <rect key="frame" x="187.66666666666666" y="0.0" width="93.666666666666657" height="36"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="Login">
@@ -134,23 +134,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egR-PJ-pML">
-                                <rect key="frame" x="10" y="173.33333333333334" width="365" height="100.33333333333334"/>
+                                <rect key="frame" x="10" y="173.33333333333334" width="365" height="117.33333333333334"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvF-Uu-c4G">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="23.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRu-Ie-cep">
-                                        <rect key="frame" x="0.0" y="30.333333333333314" width="365" height="30"/>
+                                        <rect key="frame" x="0.0" y="33.333333333333314" width="365" height="37"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                         <state key="normal" title="Mail"/>
                                         <connections>
                                             <action selector="mailButton:" destination="efj-Th-C70" eventType="touchUpInside" id="faD-Oy-FRb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO1-5x-dqD">
-                                        <rect key="frame" x="0.0" y="70.333333333333314" width="365" height="30"/>
+                                        <rect key="frame" x="0.0" y="80.333333333333314" width="365" height="37"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                         <state key="normal" title="Telefon"/>
                                         <connections>
                                             <action selector="telButton:" destination="efj-Th-C70" eventType="touchUpInside" id="Ll2-EI-O5a"/>
